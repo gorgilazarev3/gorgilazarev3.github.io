@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gorgi Lazarev Personal Website">
+    <meta name="keywords" content="FINKI, Gorgi Lazarev, Personal Website, Web Design">
+    <link rel="icon" href="content/images/thumbnail2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">    
+    <link href="content/style.css" rel="stylesheet">
+    <script type="text/javascript" src="content/main.js"></script>
+    <title>Gorgi Lazarev</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav-menu">
+            <div class="nav-logo-container">
+                <a href="index.html" class="nav-logo" id="nav-logo">Gorgi L.</a>
+                <!-- <img class="nav-logo" src="content/images/gorgi_logo.png" alt="Logo of my name"> -->
+            </div>
+            <div class="nav-links-container" id="nav-links-container">
+                <ul class="nav-links">
+                    <li id="nav-home"><a href="#home" id="nav-home" onclick="linkClick()"><img src="content/images/icons/home_icon.png" class="nav-icons">Home</a></li>
+                    <li id="nav-about"><a href="#about" id="nav-about" onclick="linkClick()"><img src="content/images/icons/about-icon.png" class="nav-icons">About</a></li>
+                    <li id="nav-experience"><a href="#experience" id="nav-experience" onclick="linkClick()"><img src="content/images/icons/education-icon.png" class="nav-icons">Experience</a></li>
+                    <li id="nav-portfolio"><a href="#portfolio" id="nav-portfolio" onclick="linkClick()"><img src="content/images/icons/portfolio-icon.png" class="nav-icons">Portfolio</a></li>
+                    <li id="nav-contact"><a href="#contact" id="nav-contact" onclick="linkClick()"><img src="content/images/icons/contact-icon.png" class="nav-icons">Contact</a></li>
+                </ul> 
+            </div>
+            <div class="nav-btn" id="nav-btn" onclick="toggleNav()">
+                <img src="content/images/icons/nav-icon.png" id="nav-menu-icon">
+            </div>
+            <!-- <div class="theme-btn" id="theme-btn">
+                <img src="content/images/icons/moon-icon.png" alt="Moon icon" class="moon-icon" id="moon-icon">
+            </div> -->
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="home-container" id="home-container">
+                <div class="home-content" id="home-content">
+                    <div class="home-picture" id="home-picture">
+                        <img src="content/images/me-blob.png" class="home-picture">
+                    </div>
+                    <div class="home-text" id="home-text">
+                        <h1 class="home-h1" id="home-h1">Hello, I'm Gorgi</h1>
+                        <h3 class="home-h3" id="home-h3">
+                            Software Engineering Student
+                        </h3>
+                        <p class="home-p" id="home-p"><a href="https://www.finki.ukim.mk" target="_blank" id="finki-link">Faculty of Computer Science and Engineering, Skopje</a></p>
+                    </div>
+                    <div class="home-socials" id="home-socials">
+                        <a href="https://www.facebook.com/gorgi.lazarev1/" class="facebook-link" id="facebook-link" target="_blank"><img src="content/images/social-media-icons/facebook-icon.png" alt="Facebook icon" id="facebook-icon"></a>
+                        <a href="https://www.instagram.com/gorgilazarev3/" class="instagram-link" id="instagram-link" target="_blank"><img src="content/images/social-media-icons/instagram-icon.png" alt="Instagram icon" id="instagram-icon"></a>
+                        <a href="https://github.com/gorgilazarev3" class="github-link" id="github-link" target="_blank"><img src="content/images/social-media-icons/github-icon.png" alt="Github icon" id="github-icon"></a>
+                        <a href="mailto: gorgi.lazarev3@gmail.com" class="mail-link" id="mail-link" target="_blank"><img src="content/images/social-media-icons/mail-icon.png" alt="Mail icon" id="mail-icon"></a>
+                    </div>
+                    <div class="contact-me" id="contact-me">
+                        <a href="#contact" class="contact-btn" id="contact-btn">Contact me <img src="content/images/icons/contact-icon.png" class="contact-me-icon"></a>
+                    </div>
+                </div>
+                <div class="scroll-down" id="scroll-down">
+                    <a href="#about" class="scroll-down-link"><img src="content/images/icons/scroll-down-icon.png" alt="Scroll down icon" id="scroll-down-img">Scroll down</a>
+                </div>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <h2 class="about-title" id="about-title">
+                About Me
+            </h2>
+            <div class="about-content" id="about-content">
+                <p class="about-description" id="about-description">My name is Gorgi Lazarev, I come from Radovish, Macedonia.<br>
+                    I am currently a first year student at the Faculty of Computer Science and Engineering. My hobbies include playing video games, playing basketball and working out. I am still exploring my other interests.
+                </p>
+                <hr class="colored-line">
+            </div>
+        </section>
+        <section class="experience section" id="experience">
+            <h2 class="experience-h2 section-title" id="experience-h2">Experience and qualification</h2>
+            <span class="section-text experience-text" id="section-text">My personal journey</span>
+
+            <div class="experience-container">
+                <div class="experience-split">
+                    <div class="experience-education experience-btn experience-btn-active" id="education-btn" onclick="toggleEducationDisplay()">
+                        <img src="content/images/icons/graduation-icon.png" alt="Graduation icon" class="graduation-icon experience-icons" id="graduation-icon">
+                        Education
+                    </div>
+                    <div class="experience-work experience-btn" id="work-btn" onclick="toggleWorkDisplay()">
+                        <img src="content/images/icons/briefcase-icon.png" alt="Briefcase icon" class="work-icon experience-icons" id="work-icon">
+                        Work
+                    </div>
+                </div>
+                    <div class="experience-sections">
+                        <div class="experience-content experience-active" data-content id="education"> 
+                            <!-- EDUCATION -->
+                            <div class="experience-description">
+                                
+                                <div>
+                                    <h3 class="experience-title">Software Engineering and Information Systems</h3>
+                                    <span class="experience-subtitle">Faculty of Computer Science and Engineering - UKIM</span>
+                                    <div class="experience-time">2020 - Present</div>
+                                </div>
+
+                                <div>
+                                    <span class="experience-circle"></span>
+                                    <span class="experience-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="experience-description">
+                                <div></div>
+                                <div>
+                                    <span class="experience-circle"></span>
+                                    <span class="experience-line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="experience-title">MTA Introduction to Programming Using JavaScript</h3>
+                                    <span class="experience-subtitle">Online Course</span>
+                                    <div class="experience-time">2020-2020</div>
+                                </div>
+                            </div>
+
+                            <div class="experience-description">
+
+                                <div>
+                                    <h3 class="experience-title">High School</h3>
+                                    <span class="experience-subtitle">Kosta Susinov - Radovish</span>
+                                    <div class="experience-time">2016 - 2020</div>
+                                </div>
+
+                                <div>
+                                    <span class="experience-circle"></span>
+                                    <span class="experience-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="experience-description">
+                                <div></div>
+                                <div>
+                                    <span class="experience-circle"></span>
+                                    <!-- <span class="experience-line"></span> -->
+                                </div>
+                                <div>
+                                    <h3 class="experience-title">Middle School</h3>
+                                    <span class="experience-subtitle">Krste Petkov Misirkov - Radovish</span>
+                                    <div class="experience-time">2012-2016</div>
+                                </div>
+                            </div>
+
+                        </div>
+                            <!-- WORK -->
+                        <div class="experience-content" data-content id="work">
+
+                            <div class="experience-description" >
+                                
+                                <div>
+                                    <h3 class="experience-title">Volunteering - Web development</h3>
+                                    <span class="experience-subtitle">GSS - Radovish</span>
+                                    <div class="experience-time">2020 - Present</div>
+                                </div>
+
+                                <div>
+                                    <span class="experience-circle"></span>
+                                    <span class="experience-line"></span>
+                                </div>
+                            </div>
+
+                            <div class="experience-description">
+                                <div></div>
+                                <div>
+                                    <span class="experience-circle"></span>
+                                    <span class="experience-line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="experience-title">Internship - Non-governmental organization</h3>
+                                    <span class="experience-subtitle">CELOR - Center for Local Development Radovish</span>
+                                    <div class="experience-time">2020-2020</div>
+                                </div>
+                            </div>
+
+                            <div class="experience-description">
+                                <div>
+                                    <h3 class="experience-title">Volunteering - Non-governmental organization</h3>
+                                    <span class="experience-subtitle">Kruna PLUS - Radovish</span>
+                                    <div class="experience-time">2017-2019</div>
+                                </div>
+                                <div>
+                                    <span class="experience-circle"></span>
+                                    <!-- <span class="experience-line"></span> -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+            </div>
+        </section>
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-text">Most recent work</span>
+
+            <div class="portfolio-container">
+                <div class="portfolio-content portfolio-slider" id="slider1">
+                    <img src="content/images/lakes-mk.jpg" alt="Picture of the website lakes.mk" class="portfolio-img">
+
+                    <div class="portfolio-text">
+                        <h3 class="portfolio-title">WordPress Website</h3>
+                        <p class="portfolio-description">Managed the content for  a Bilingual web-platform for promoting tourism in the Ohrid - Prespa region</p>
+                        <a href="http://www.lakes.mk" class="page-btn" id="portfolio-btn" target="_blank">Check it out!</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-content" id="slider2">
+                    <img src="content/images/interplast.jpg" alt="Picture of the website interplast.mk" class="portfolio-img">
+
+                    <div class="portfolio-text">
+                        <h3 class="portfolio-title">Layout Design for Responsive Website</h3>
+                        <p class="portfolio-description">Contributed in designing the layout and some functionalities - Demo Responsive Website for a manufacturing company</p>
+                        <a href="http://www.interplast.mk" class="page-btn" id="portfolio-btn" target="_blank">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <span class="section-text">Get in touch</span>
+            <div class="contact-container">
+                <div class="contact-left" id="contact-left">
+                    <div class="contact-phone" id="contact-phone">
+                        <img src="content/images/icons/phone-icon.png" alt="Phone Icon" id="phone-icon">
+                        <span class="phone-title">Call Me</span>
+                        <span class="phone-icon">+38977834241</span>
+                    </div>
+                    <div class="contact-email" id="contact-email">
+                        <img src="content/images/social-media-icons/mail-icon.png" alt="Mail Icon" id="mail-icon-2">
+                        <span class="mail-title">Send me an e-mail</span>
+                        <span class="mail-icon-2">gorgi.lazarev3@gmail.com</span>
+                    </div>
+                </div>
+                <form action="" class="contact-form" id="contact-form">
+                    <div class="contact-inputs">
+                        <div class="contact-content">
+                            <label for="first-name" class="contact-label">Name</label>
+                            <input name="first-name" type="text" class="contact-input">
+                        </div>
+                        <div class="contact-content">
+                            <label for="email" class="contact-label">Email</label>
+                            <input name="email" type="email" class="contact-input">
+                        </div>
+                    </div>
+                    <div class="contact-content">
+                        <label for="message" class="contact-label">Message</label>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact-input"></textarea>
+                    </div>
+                    <div>
+                        <a href="#" class="page-btn" id="send-btn">Send Message</a>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-background">
+            <div class="footer-container">
+                <div>
+                    <h1 class="footer-title">
+                        Gorgi
+                    </h1>
+                    <span class="footer-description">Software Engineering Student at FCSE</span>
+                    <p class="footer-copy">&copy; Gorgi Lazarev 2021. Design inspired by <a href="https://www.facebook.com/bedimcode/" target="_blank">Bedimcode</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="back-to-top"><img src="content/images/icons/arrow-up-icon.png" alt="Arrow up icon" class="back-to-top" id="back-to-top-icon"></a>
+</body>
+</html>
